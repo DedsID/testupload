@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
     <title>Test</title>
 </head>
 <body class="container px-24 m-auto text-u-darkblue">
@@ -56,7 +57,8 @@
             <p class="py-10"> <a href="#" class="text-xs text-white bg-[#ff7d62] px-7 py-3 rounded-3xl"> Contact us →  </a> </p>
         </div> 
 
-        <img src="./img/img1.jpg" alt="" width="60%" class="m-auto -mt-20" />
+        <img src="./img/img1.jpg" alt="" width="60%" class="m-auto -mt-20" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"/>
 
     </div>
 
@@ -180,7 +182,7 @@
 
     <!-- Testimoni -->
 
-    <div class="">
+    <div class="pb-20">
         <p class="text-xs font-bold text-[#8adb7d] text-center"> TESTIMONIAL </p>
         <p class="text-[30px] font-serif font-bold text-center py-2 capitalize">what people say about us</p>
      
@@ -207,6 +209,13 @@
     </div>
     
     <!-- /Testimoni -->
+    <!-- script -->
 
+    <script src="./js/scroll.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
 </body>
 </html>
