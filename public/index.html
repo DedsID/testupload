@@ -13,35 +13,63 @@
 
     <!-- nav -->
 
-    <nav class="py-10 flex justify-between font-bold">
-        <ul class="list-none">
-            <li>
-                <a href="#" class="font-serif text-lg font-extrabold">Dental</a>
-            </li>
-        </ul>
-        <ul class="flex flex-row text-sm">
-            <li class="px-5">
-                <a href="#">Home</a>
-            </li>
-            <li class="px-5">
-                <a href="#">About Us</a>
-            </li>
-            <li class="px-5">
-                <a href="#">Pages ▿</a>
-            </li>
-            <li class="px-5">
-                <a href="#">Service</a>
-            </li>
-            <li class="px-5">
-                <a href="#">Blog</a>
-            </li>
-            <li class="px-5">
-                <a href="#">Contact</a>
-            </li>
-            <li class="px-5">
-                <a href="#" class="bg-[#8adb7d] text-white rounded-3xl py-3 px-6 text-xs">Sign Up</a>
-            </li>
-        </ul>
+    <nav class="py-10 font-bold">
+        <div class="flex justify-between">
+            <ul class="list-none">
+                <li>
+                    <a href="#" class="font-serif text-lg font-extrabold">Dental</a>
+                </li>
+            </ul>
+            <ul class="hidden md:flex flex-row text-sm">
+                <li class="px-5">
+                    <a href="#">Home</a>
+                </li>
+                <li class="px-5">
+                    <a href="#">About Us</a>
+                </li>
+                <li class="px-5">
+                    <a href="#">Pages ▿</a>
+                </li>
+                <li class="px-5">
+                    <a href="#">Service</a>
+                </li>
+                <li class="px-5">
+                    <a href="#">Blog</a>
+                </li>
+                <li class="px-5">
+                    <a href="#">Contact</a>
+                </li>
+                <li class="px-5">
+                    <a href="#" class="bg-[#8adb7d] text-white rounded-3xl py-3 px-6 text-xs">Sign Up</a>
+                </li>
+            </ul>
+            <div class="md:hidden sflex items-center">
+                <button class="outline-none mobile-menu-button">
+                    <svg    class=" w-6 h-6 text-u-darkblue hover:text-green-500 "
+                            x-show="!showMenu"
+                            fill="none"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About Us</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Blog</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-greens-500 transition duration-300">Contact</a></li>
+                <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Sign Up</a></li>
+            </ul>
+        </div>
 
     </nav>
 
@@ -49,7 +77,7 @@
 
     <!-- hero -->
 
-    <div class="pt-5 md:pt-28">
+    <div class="py-10 md:pt-28">
 
         <div class="text-xs font-bold text-[#8adb7d]"> CERTIFIED DOCTORS </div>
 
@@ -68,9 +96,9 @@
 
     <!-- section 1 -->
 
-    <div class="py-20 md:py-48">
+    <div class="py-10 bg-gray-50 -mx-10 px-10 sm:bg-white md:py-48">
         <p class="text-xs font-bold text-[#8adb7d] text-center"> FASTEST SOLUTION </p>
-        <p class="text-[35px] font-serif font-bold text-center py-2">The Best Dental Treatment</p>
+        <p class="text-[28px] md:text-[35px] font-serif font-bold text-center py-2">The Best Dental Treatment</p>
      
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-11 pt-10 md:pt-20 text-u-softblue">
             <div class="bg-white rounded-lg p-7">
@@ -105,15 +133,15 @@
 
     <!-- section 2 -->
 
-    <div class="md:pt-28">
+    <div class="py-10 md:pt-28">
 
         <div class="text-xs font-bold text-[#8adb7d] pb-5 md:invisible"> ABOUT US </div>
 
-        <img src="./img/img2.png" alt="" class="pt-7 m-auto md:float-left w-[58%] md:-mt-14 md:w-[65%] lg:w-[50%] lg:-mt-32 lg:mr-11" />
+        <img src="./img/img2.png" alt="" class="hidden md:flex pt-7 m-auto md:float-left w-[58%] md:-mt-14 md:w-[65%] lg:w-[50%] lg:-mt-32 lg:mr-11" />
         
         <div class="">  
             <p class="text-xs font-bold text-[#8adb7d] invisible md:visible"> ABOUT US </p>
-            <p class="py-5 text-[35px] font-serif font-bold"> High-quality dentistry and 24 hour emergency dentist in Chelsea </p>
+            <p class="py-5 text-[28px] md:text-[35px] font-serif font-bold"> High-quality dentistry and 24 hour emergency dentist in Chelsea </p>
             <p class="text-xs font-thin leading-relaxed text-u-softblue"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium esse, facere placeat nihil aliquam neque, totam natus velit iure dolore magnam molestiae voluptas minima possimus quam error maiores sequi, consectetur repudiandae ipsa! Dicta reprehenderit saepe perferendis quaerat </p>
             <div class="grid grid-cols-2 pt-8">
                 <div>
@@ -134,14 +162,14 @@
 
     <!-- section 3 -->
 
-    <div class="pt-20 md:pt-96">
+    <div class="py-10 bg-gray-50 -mx-10 px-10 sm:bg-white md:pt-96">
 
         <div class="text-xs font-bold text-[#8adb7d]"> WHY CHOOSE US </div>
 
-        <img src="./img/img3.png" alt="" width="40%" class="pt-7 m-auto w-[58%] md:float-right md:-mt-20 md:w-[65%] md:-mr-16 lg:-mr-0 lg:w-[55%] lg:-mt-36" />
+        <img src="./img/img3.png" alt="" width="40%" class="hidden md:flex m-auto w-[58%] md:float-right md:-mt-20 md:w-[65%] md:-mr-16 lg:-mr-0 lg:w-[55%] lg:-mt-36" />
 
         <div class="lg:max-w-md">  
-            <p class="py-5 text-[35px] font-serif font-bold"> A Warm Welcome and a Beautiful Smile </p>
+            <p class="py-5 text-[28px] md:text-[35px] font-serif font-bold"> A Warm Welcome and a Beautiful Smile </p>
             <p class="text-xs font-thin leading-relaxed text-u-softblue max-w-[350px]"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, atque maiores non impedit officiis nisi obcaecati tempore! Aliquam, voluptates numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, in! </p>
             <ul class="text-xs font-thin pt-5 leading-loose text-u-softblue">
                 <li>✅ Professional Dental Service 24/7</li>
@@ -157,28 +185,34 @@
 
     <!-- section 4 -->
 
-    <div class="py-20 md:py-48">
+    <div class="py-10 md:py-48">
         <p class="text-xs font-bold text-[#8adb7d] text-center"> 7 YEARS OF EXPERIENCE </p>
-        <p class="text-[35px] font-serif font-bold text-center py-2 capitalize">maximum dental care <br> for your comfort</p>
+        <p class="text-[28px] md:text-[35px] font-serif font-bold text-center py-2 capitalize">maximum dental care <br> for your comfort</p>
      
         <div class="grid md:grid-cols-3 gap-11 pt-14 ">
-            <div class="bg-[#fdf0c2] rounded-tl-3xl rounded-br-3xl p-10">
-                <div class="bg-white rounded-full text-center w-16 text-lg font-bold p-4">👍</div>
-                <div class="font-bold font-sans text-lg py-4 pt-7">Guaranteed Quality</div>
-                <div class="text-xs font-thin leading-relaxed text-u-softblue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur deserunt mollitia error omnis vitae labore harum eius, nobis reprehenderit.</div>
-                <div class="text-xs font-bold pt-5"> <a href="#"> Explore Now → </a></div>
+            <div class="bg-[#fdf0c2] rounded-tl-3xl rounded-br-3xl p-10 relative">
+                <div class="bg-white rounded-full md:w-16 md:h-16 text-center w-52 h-52 absolute md:static flex -top-10 -right-10"><span class="m-auto text-[150px] opacity-30 md:text-lg md:opacity-100">👍</span></div>
+                <div class="relative">
+                        <div class="font-bold font-sans text-lg py-4 pt-7">Guaranteed Quality</div>
+                        <div class="text-xs font-thin leading-relaxed text-u-softblue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur deserunt mollitia error omnis vitae labore harum eius, nobis reprehenderit.</div>
+                        <div class="text-xs font-bold pt-5"> <a href="#"> Explore Now → </a></div>
+                </div>
             </div>
-            <div class="bg-[#fee7dc] rounded-bl-3xl rounded-tr-3xl p-10">
-                <div class="bg-white rounded-full text-center w-16 text-lg font-bold p-4">💕</div>
-                <div class="font-bold font-sans text-lg py-4 pt-7">Certified Dentist</div>
-                <div class="text-xs font-thin leading-relaxed text-u-softblue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur deserunt mollitia error omnis vitae labore harum eius, nobis reprehenderit.</div>
-                <div class="text-xs font-bold pt-5"> <a href="#"> Explore Now → </a></div>
+            <div class="bg-[#fee7dc] rounded-bl-3xl rounded-tr-3xl p-10 relative">
+                <div class="bg-white rounded-full md:w-16 md:h-16 text-center w-52 h-52 absolute md:static flex -top-10 -left-10"><span class="m-auto text-[150px] opacity-30 md:text-lg md:opacity-100">💕</span></div>
+                <div class="relative">
+                    <div class="font-bold font-sans text-lg py-4 pt-7">Certified Dentist</div>
+                    <div class="text-xs font-thin leading-relaxed text-u-softblue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur deserunt mollitia error omnis vitae labore harum eius, nobis reprehenderit.</div>
+                    <div class="text-xs font-bold pt-5"> <a href="#"> Explore Now → </a></div>
+                </div>
             </div>
-            <div class="bg-[#e0f7eb] rounded-tl-3xl rounded-br-3xl p-10">
-                <div class="bg-white rounded-full text-center w-16 text-lg font-bold p-4">🕚</div>
-                <div class="font-bold font-sans text-lg py-4 pt-7">Free Monitoring</div>
-                <div class="text-xs font-thin leading-relaxed text-u-softblue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur deserunt mollitia error omnis vitae labore harum eius, nobis reprehenderit.</div>
-                <div class="text-xs font-bold pt-5"> <a href="#"> Explore Now → </a></div>
+            <div class="bg-[#e0f7eb] rounded-tl-3xl rounded-br-3xl p-10 relative">
+                <div class="bg-white rounded-full md:w-16 md:h-16 text-center w-52 h-52 absolute md:static flex -top-10 -right-10"><span class="m-auto text-[150px] opacity-30 md:text-lg md:opacity-100">🕚</span></div>
+                <div class="relative">
+                    <div class="font-bold font-sans text-lg py-4 pt-7">Free Monitoring</div>
+                    <div class="text-xs font-thin leading-relaxed text-u-softblue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consectetur deserunt mollitia error omnis vitae labore harum eius, nobis reprehenderit.</div>
+                    <div class="text-xs font-bold pt-5"> <a href="#"> Explore Now → </a></div>
+                </div>
             </div>
 
         </div>
@@ -188,13 +222,13 @@
 
     <!-- Testimoni -->
 
-    <div class="pb-20">
+    <div class="py-10 bg-gray-50 -mx-10 px-10 sm:bg-white px-10">
         <p class="text-xs font-bold text-[#8adb7d] text-center"> TESTIMONIAL </p>
-        <p class="text-[35px] font-serif font-bold text-center py-2 capitalize">what people say about us</p>
+        <p class="text-[28px] md:text-[35px] font-serif font-bold text-center py-2 capitalize">what people say about us</p>
      
         <div class="grid md:grid-cols-2 gap-11 pt-14 ">
-            <div class="grid grid-cols-5 p-10 bg-white rounded-3xl border-solid border border-sky drop-shadow-2xl">
-                <img src="./img/face.jpg" alt="budi" class="rounded-full w-16 border-solid border-2 border-sky">
+            <div class="flex p-10 bg-white rounded-3xl border-solid border border-sky drop-shadow-2xl">
+                <img src="./img/face.jpg" alt="budi" class="rounded-full w-16 border-solid border-2 border-sky h-16 mr-4">
                 <div class="col-span-4">
                     <div class="font-bold font-sans text-base">Jassie Doe</div>
                     <div class="text-xs font-thin leading-relaxed text-u-softblue">Lorem ipsum dolor sit amet</div>
@@ -202,8 +236,8 @@
                     <div class="text-xs pt-4 leading-relaxed text-u-softblue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed deserunt optio ratione exercitationem sit animi, qui laudantium, quisquam quae aspernatur, eligendi consectetur! Fuga, delectus enim. Maxime ullam maiores vitae dolorem?</div>
                 </div>
             </div>
-            <div class="grid grid-cols-5 p-10 bg-white rounded-3xl border-solid border border-sky drop-shadow-2xl">
-                <img src="./img/face.jpg" alt="budi" class="rounded-full w-16 border-solid border-2 border-sky">
+            <div class="flex p-10 bg-white rounded-3xl border-solid border border-sky drop-shadow-2xl">
+                <img src="./img/face.jpg" alt="budi" class="rounded-full w-16 border-solid border-2 border-sky h-16 mr-4">
                 <div class="col-span-4">
                     <div class="font-bold font-sans text-base">Sara Doe</div>
                     <div class="text-xs font-thin leading-relaxed text-u-softblue">Lorem ipsum dolor sit amet</div>
@@ -216,73 +250,16 @@
     
     <!-- /Testimoni -->
 
-  
-		<!-- Navbar goes here -->
-		<nav class="bg-white shadow-lg">
-			<div class="max-w-6xl mx-auto px-4">
-				<div class="flex justify-between">
-					<div class="flex space-x-7">
-						<div>
-							<!-- Website Logo -->
-							<a href="#" class="flex items-center py-4 px-2">
-								<img src="logo.png" alt="Logo" class="h-8 w-8 mr-2">
-								<span class="font-semibold text-gray-500 text-lg">Navigation</span>
-							</a>
-						</div>
-						<!-- Primary Navbar items -->
-						<div class="hidden md:flex items-center space-x-1">
-							<a href="" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold ">Home</a>
-							<a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
-							<a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
-							<a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact Us</a>
-						</div>
-					</div>
-					<!-- Secondary Navbar items -->
-					<div class="hidden md:flex items-center space-x-3 ">
-						<a href="" class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
-						<a href="" class="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300">Sign Up</a>
-					</div>
-					<!-- Mobile menu button -->
-					<div class="md:hidden flex items-center">
-						<button class="outline-none mobile-menu-button">
-                            <svg    class=" w-6 h-6 text-gray-500 hover:text-green-500 "
-                                    x-show="!showMenu"
-                                    fill="none"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor"
-                                    >
-                                <path d="M4 6h16M4 12h16M4 18h16"></path>
-                            </svg>
-					    </button>
-					</div>
-				</div>
-			</div>
-			<!-- mobile menu -->
-			<div class="hidden mobile-menu">
-				<ul class="">
-					<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
-					<li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About Us</a></li>
-					<li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
-					<li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Blog</a></li>
-                    <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact</a></li>
-                    <li><a href="#" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Sign Up</a></li>
-				</ul>
-			</div>
-			<script>
-				const btn = document.querySelector("button.mobile-menu-button");
-				const menu = document.querySelector(".mobile-menu");
-
-				btn.addEventListener("click", () => {
-					menu.classList.toggle("hidden");
-				});
-			</script>
-		</nav>
-
     <!-- script -->
 
+    <script>
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    </script>
     <script src="./js/scroll.js"></script>
     <script src="../node_modules/aos/dist/aos.js"></script>
     <script>
